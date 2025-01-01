@@ -1,3 +1,6 @@
+// Created by Marius Landwehr
+// License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License
+
 include <../BOSL2/std.scad>
 
 /* [Box Variables] */
