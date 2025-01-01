@@ -27,7 +27,7 @@ holeYOffset = 5.0;
 // the bottom hole radius
 holeRadiusBottom = 2.0;
 // the top hole radius
-holeRadiusTop = 3.5;
+holeRadiusTop = 3.6;
 
 /* [Others] */
 $fn=50;

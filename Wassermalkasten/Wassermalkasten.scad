@@ -135,16 +135,15 @@ module completeLid() {
     union() {
         right(1)
         up(2)
-        // difference() {
+        difference() {
             lid();
-            color("Red")
             back(lengthWithoutBorders/2)
-            // back(totalWidth/2-9.5)
-            up(height-3)
+            up(height-5)
+            fwd(3.5)
             left((totalWidth+12)/2)
             rotate([0,90,0]) 
             cylinder(totalWidth+12, 2.2, 2.2, $fn=50, false);
-        // }
+        }
         rot(180)
         left((clipWidth/2)-2)
         up(height - 4.5)
@@ -176,10 +175,10 @@ if (itemsShown == "both" || itemsShown == "box") {
 
 if (itemsShown == "both" || itemsShown == "lid") {
     union() {
-        // yrot(180)
-        // back(totalLength+borderWidth+4)
-        // down(height+2.2)
-        // right(borderWidth*2)
-       // completeLid();
+        yrot(180)
+        back(totalLength+borderWidth+4)
+        down(height+2.2)
+        right(borderWidth*2)
+        completeLid();
     }
 }
